@@ -62,7 +62,7 @@
                     </div>
                 </div>
                 <div class="panel-footer">
-                    <h5>Internal Use Only</h5>
+                    <h5>Enter the App and for Internal Use Only</h5>
                 </div>
              </div>
         </section>
