@@ -62,7 +62,7 @@
                     </div>
                 </div>
                 <div class="panel-footer">
-                    <h5>Enter the App and configured automate build for Internal Use Only</h5>
+                    <h5>Enter the App and configured automate build and deploy for Internal Use Only</h5>
                 </div>
              </div>
         </section>
