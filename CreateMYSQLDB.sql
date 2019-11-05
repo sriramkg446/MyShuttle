@@ -28,8 +28,9 @@ INSERT IGNORE INTO `employees` (`username`, `password`) VALUES ('fred', 'fredpas
 INSERT IGNORE INTO `employees` (`username`, `password`) VALUES ('barney', 'barneypassword');
 INSERT IGNORE INTO `employees` (`username`, `password`) VALUES ('wilma', 'wilmapassword');
 INSERT IGNORE INTO `employees` (`username`, `password`) VALUES ('betty', 'bettypassword');
+INSERT IGNORE INTO `employees` (`username`, `password`) VALUES ('srkgurram', 'srkgurrampassword');
 
-
+INSERT IGNORE INTO `fares` (`emp_id`, `pickup`, `dropoff`, `start`, `end`, `fare_charge`, `driver_fee`, `passenger_rating`, `driver_rating`) VALUES ((select `id` from `employees` where `username`='srkgurram') , 'MayFair', 'Menomonee Falls', '2014-06-19 16:13:00', '2014-06-19 16:34:00', '1527', '1145', '3', '4');
 INSERT IGNORE INTO `fares` (`emp_id`, `pickup`, `dropoff`, `start`, `end`, `fare_charge`, `driver_fee`, `passenger_rating`, `driver_rating`) VALUES ((select `id` from `employees` where `username`='betty') , '87 Wooly Way, Topsoil, WA', '55 Mammoth Way, Bedrock, WA', '2014-06-19 16:13:00', '2014-06-19 16:34:00', '1527', '1145', '3', '4');
 INSERT IGNORE INTO `fares` (`emp_id`, `pickup`, `dropoff`, `start`, `end`, `fare_charge`, `driver_fee`, `passenger_rating`, `driver_rating`) VALUES ((select `id` from `employees` where `username`='betty'), '18 Wooly Way, Bedrock, WA', '73 Mammoth Way, Limestone, WA', '2015-01-20 17:00:00', '2015-01-20 17:02:00', '743', '557', '2', '3');
 INSERT IGNORE INTO `fares` (`emp_id`, `pickup`, `dropoff`, `start`, `end`, `fare_charge`, `driver_fee`, `passenger_rating`, `driver_rating`) VALUES ((select `id` from `employees` where `username`='betty'), '42 Mammoth Way, Rock Gardens, WA', '71 Hunting Lane, Bedrock, WA', '2015-04-28 00:20:00', '2015-04-28 00:40:00', '1682', '1261', '5', '2');
